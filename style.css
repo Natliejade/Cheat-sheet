@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #snow;
+    color: darkslategrey;
+    font-family: "monospace",    serif;
+    padding: 0% 5% 1%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: beige;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Nav */
+header {
+    margin-bottom: 3rem;
+}
+
+nav {
+    background-color: darkslategrey;
+    color: snow;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+
+ul {
+    text-align: center;
+}
+
+li {
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+}
+
+.margin-bottom-5 {
+    margin-bottom: 5rem;
+}
+
+.margin-bottom-2 {
+    margin-bottom: 2rem;
+}
+
+.padding-top-5 {
+    padding-top: 5rem;
+}
+
+/* Table Section */
+h1 {
+    font-size: 3rem;
+    color: darkslategrey;
+    line-height: 0.8;
+}
+
+div {
+    margin-bottom: 2rem;
+}
+
+table {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+tr, td, th {
+    border: 1px solid #1F1E26;
+    padding: 1rem;
+    text-align: left;
+}
+
+th {
+    background-color: darkslategrey;
+    color: snow;
+}
+
+thead {
+    font-size: 1.3rem;
+}
+
+.small-text {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #1F1E26;
+}
+
+.code {
+    font-family: monospace;
+    background-color: beige;
+}
+
+.italic {
+    font-style: italic;
+    opacity: 0.6;
+}
+/* Footer styles */
+
+footer p {
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+

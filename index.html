@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Own Cheet Sheet</title>
+    <!-- Google Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link href="/style.css" type="text/css" rel="stylesheet" >
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#typo">Typography</a></li>
+                <li><a href="#units">Units of Measurement</a></li>
+                <li><a href="#tables">Tables</a></li>
+            </ul>            
+        </nav>
+    </header>
+        <!-- Units of Measurement Table -->
+    <section id="typo" class="center padding-top-5 margin-bottom-2">
+        <div>
+            <h1>Typography Properties<br><span class="small-text">Cheat sheet</span></h1>            
+        </div>
+        <table>
+            <thead>
+                <!-- Menu Description -->
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Recommended options</th>
+                    <th scope="col">Examples</th>
+                    <th scope="col">Description</th>
+                </tr>                
+            </thead>
+            <tbody >
+                <!-- font-size -->
+                <tr>
+                    <td><span class="code">&lt;font-size&gt;</span></td>
+                    <td>px<br>rems<br>vh / vw</td>
+                    <td>font-size: 1rem;<br>font-size: 16px;</td>
+                    <td>The font-size property in HTML (using CSS) controls the size of text, and we recommend using rem for consistency, while vw and vh allow for scalable, responsive text (more advanced).</td>
+                </tr>                
+                <!-- font-family-->
+                <tr>
+                    <td><span class="code">&lt;font-family&gt;</span></td>
+                    <td>'Primary font', fallback-font;</td>
+                    <td>font-family: 'Montserrat', sans-serif;</td>
+                    <td>The font-family property in HTML (using CSS) allows you to set a primary font and list multiple fallback fonts, separated by commas, in case the primary one isn’t available.</td>
+                </tr>
+                <!-- font-weight -->
+                <tr>
+                    <td><span class="code">&lt;font-weight&gt;</span></td>
+                    <td>Number from 100 to 900 <br> lighter/normal/bold</td>
+                    <td>font-weight: 300;<br>font-weight: lighter;</td>
+                    <td>This property controls how bold or light the text appears.</td>
+                </tr>
+                <!-- color -->
+                <tr>
+                    <td><span class="code">&lt;color&gt;</span></td>
+                    <td>color name<br>hex code #ffffff (#fff)<br>rgb(_,_,_)</td>
+                    <td>color: coral;<br>color: #ff7f50;<br>color: rgb(127,80,100);</td>
+                    <td>This property controls how thick or thin the text appears. </td>
+                </tr>
+                <!-- text-align-->
+                <tr>
+                    <td><span class="code">&lt;text-alight&gt;</span></td>
+                    <td>left<br>center<br>right<br>justified</td>
+                    <td>text-alight: left;<br>text-alight: center;<br>text-alight: right;<br>text-alight: justified;</td>
+                    <td>Defines the horizontal alignment of text inside its container. Options include left (default), right, center, or justify, which evenly spaces words across the full width of the element.</td>
+                </tr>
+                <!-- text-decoration -->
+                <tr>
+                    <td><span class="code">&lt;text-decortation&gt;</span></td>
+                    <td>none<br>line-through<br>underline<br>over-line</td>
+                    <td>text-decoration: none;<br>text-decoration: line-through;<br>text-decortation: underline;   </td>
+                    <td> Adds visual effects to text, such as underline, overline, line-through (strikethrough), or none to remove default underlines from links. It helps emphasize or style text for readability.</td>
+                </tr>
+                <!-- text-transform -->
+                <tr>
+                    <td><span class="code">&lt;text-transform&gt;</span></td>
+                    <td>uppercase<br>capitalise<br>lowercase<br>none</td>
+                    <td>text-transform: uppercase;<br>text-transform: capitalize;<br>text-transform: lowercase;</td>
+                    <td>Changes how text appears in terms of capitalization. Options include uppercase (all caps), lowercase (all small letters), and capitalize (first letter of each word is uppercase).</td>
+                </tr>
+                <!-- border -->
+                <tr>
+                    <td><span class="code">&lt;border&gt;</span></td>
+                    <td><span class="italic">width can be set in</span> px, rem, or %.<br><span class="italic">style can be </span>solid, dotted or dashed <br><span class="italic">color can use any of the color properties above.</span></td>
+                    <td><span class="italic">border: width style color:</span><br>border: 1px solid;<br>border: 1% dashed coral<br>border: 1rem solid #ff7f50;</td>
+                    <td>Creates a border around an element, not just text, and allows customization of thickness, style, and color. It helps define sections or highlight content.</td>
+                </tr>
+                <!-- letter-spacing -->
+                <tr>
+                    <td><span class="code">&lt;letter-spacing&gt;</span></td>
+                    <td>px<br>em<br>rem</td>
+                    <td>letter-spacing: 1px;<br>letter-spacing: .5em;</td>
+                    <td>Creates a border around an element, not just text, and allows customization of thickness, style, and color (e.g., 2px solid black or 1px dashed red). It helps define sections or highlight content.</td>
+                </tr>
+                <!-- word-spacing-->
+                <tr>
+                    <td><span class="code">&lt;word-spacing&gt;</span></td>
+                    <td>px<br>em<br>rem</td>
+                    <td>word-spacing: 5px;<br>letter-spacing: .6em</td>
+                    <td>Controls the space between words in a sentence. Increasing the value (e.g., 5px) makes words more spaced out, improving readability, while a negative value reduces gaps.</td>
+                </tr>
+                <!-- line-height -->
+                <tr>
+                    <td><span class="code">&lt;line-height&gt;</span></td>
+                    <td><span class="italic">numerical </span>1, 1.3, 1.5<br><span class="italic">numerical with units </span>1px, 1,3rem, 1,5vw</td>
+                    <td>line-height: 1.5;<br>line-height: .5em;</td>
+                    <td>Sets the height of each line of text, affecting spacing between lines. A value like 1.5 (or 150%) makes text more readable, while too small a value can make lines feel cramped.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Typography Table -->
+    <section id="units" class="center padding-top-5 margin-bottom-2">
+        <div>
+            <h1>Units of Measurements<br><span class="small-text">Cheat sheet</span></h1>            
+        </div>
+        <table>
+            <thead>
+                <!-- Menu Description -->
+                <tr>
+                    <th scope="col">Unit</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Usage</th>
+                </tr>                
+            </thead>
+            <tbody>
+                <!-- Pixels PX -->
+                <tr>
+                    <td><span class="code">px</span></td>
+                    <td>A absolute unit that represents a specific number of screen pixels. For example, font-size: 16px; sets the text size to 16 pixels. Since it’s fixed, it doesn’t scale with the screen size, which can sometimes affect responsiveness. This is the most common measurement in design.</td>
+                    <td>Best for precise and fixed sizes, such as small UI elements (buttons, borders) or when you need exact control over spacing and font sizes (e.g., font-size: 16px; for consistent text size).</td>
+                </tr>                
+                <!-- Percentages % -->
+                <tr>
+                    <td><span class="code">%</span></td>
+                    <td>A relative unit that sets a size based on its parent element. For example, width: 50%; means the element takes up half the width of its parent, making it more flexible for responsive designs.</td>
+                    <td>Great for flexible and responsive layouts, such as making an image take up half its container (width: 50%;) or setting a div’s height to fill part of its parent.</td>
+                </tr>
+                <!-- EM -->
+                <tr>
+                    <td><span class="code">em</span></td>
+                    <td>A relative unit based on the font size of the element’s parent. If a parent element has font-size: 16px, then 1em equals 16px, 2em equals 32px, and so on. This allows scaling but can become tricky with nested elements.</td>
+                    <td>Useful for scalable typography and spacing. Since it inherits from the parent element, it’s good for buttons, padding, or nested elements (e.g., padding: 1.5em; adjusts proportionally based on the text size).</td>
+                </tr>
+                <!-- REM -->
+                <tr>
+                    <td><span class="code">rem</span></td>
+                    <td>Similar to em, but always relative to the root (<html>) font size, which is usually 16px by default. So 1rem is always 16px, making it more predictable than em for consistent scaling across the website.</td>
+                    <td>Ideal for maintaining consistent and scalable typography across a website since it always refers to the root font size. Commonly used for text sizes (font-size: 1.2rem;) to ensure uniform scaling.</td>
+                </tr>
+                <!-- Viewport heigh Vh & Viewport width Vw -->
+                <tr>
+                    <td><span class="code">vh</span><br><span class="code">vw</span></td>
+                    <td>vh (Viewport Height) & vw (Viewport Width) are units set sizes based on the size of the browser window. 1vh is 1% of the viewport height, and 1vw is 1% of the viewport width. For example, font-size: 5vw; makes text scale with the screen width.</td>
+                    <td>Useful for full-screen designs, such as setting a hero section’s height to 100vh (filling the entire viewport height) or making text scale with screen width (font-size: 5vw;).</td>
+                </tr>
+                <!-- Viewport lengh Vmin/ Vmax-->
+                <tr>
+                    <td><span class="code">vmin</span><br><span class="code">vmax</span></td>
+                    <td>vmin & vmax are dynamic units based on the shortest (vmin) or longest (vmax) length of the viewport. 1vmin equals 1% of the smaller dimension (height or width), while 1vmax equals 1% of the larger dimension, making them useful for responsive layouts.</td>
+                    <td>Best for responsive elements that need to scale based on screen size. For example, font-size: 3vmin; ensures text scales proportionally on both mobile and desktop without becoming too large or too small.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Tables -->
+    <section id="tables" class="center padding-top-5 margin-bottom-5">
+        <div>
+            <h1>Table Properties<br><span class="small-text">Cheat sheet</span></h1>    
+        </div>
+        <table>
+            <thead>
+                <!-- Menu Description -->
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Usage</th>
+                </tr>         
+            </thead>
+            <!-- Table -->
+            <tbody>
+                <tr>
+                    <td><span class="code">&lt;table&gt;</span></td>
+                    <td>The &lt;table&gt; element defines a table structure on a webpage. It wraps all table-related content, including rows and columns. </td>
+                    <td>&lt;table&gt; &lt;tr&gt; &lt;td&gt; Data &lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; <span class="italic">creates a simple table</span></td>
+                </tr>
+            <!-- Table Rows -->
+                <tr>
+                    <td><span class="code">&lt;tr&gt;</span></td>
+                    <td>The &lt;tr&gt; element defines a table row. It's used to group a set of table cells (&lt;td&gt; or &lt;th&gt;) within a table.</td>
+                    <td>&lt;tr&gt; &lt;td&gt; Row 1, Column 1 &lt;/td&gt; &lt;/tr&gt; <span class="italic">creates one row with a single data cell.</span></td>
+                </tr>
+            <!-- Table data -->
+                <tr>
+                    <td><span class="code">&lt;td&gt;</span></td>
+                    <td>The &lt;td&gt; (table data) element represents a data cell inside a row. It holds the actual content like text, numbers, or images in a table. </td>
+                    <td>&lt;td&gt; Apple &lt;/td&gt; <span class="italic">displays “Apple” in a table cell.</span></td>
+                </tr>
+            <!-- Table headings -->
+                <tr>
+                    <td><span class="code">&lt;th&gt;</span></td>
+                    <td>The &lt;th&gt; (table header) element defines a header cell that is typically bold and centered. I's used to describe the content of a column or row, and it helps organize data.</td>
+                    <td>&lt;td&gt; &lt;th&gt; Fruit &lt;/th&gt; <span class="italic">would be a table header cell displaying “Fruit.”</span></td>
+                </tr>
+            <!-- Table Head -->
+                <tr>
+                    <td><span class="code">&lt;thead&gt;</span></td>
+                    <td>The &lt;thead&gt; element is used to group the header content in a table. It helps separate header rows from body rows and makes it easier to style.</td>
+                    <td> &lt;thead&gt; &lt;tr&gt; &lt;th&gt; Name &lt;/th&gt; &lt;thead&gt; Price &lt;/th&gt; &lt;/th&gt; &lt;/thead&gt; <span class="italic">creates a header for the table.</span></td>
+                </tr>
+            <!-- Table Body -->
+                <tr>
+                    <td><span class="code">&lt;tbody&gt;</span></td>
+                    <td>The &lt;tbody&gt; element groups the main content (body) of a table. It's used to separate table data from the header and footer, making tables easier to manage and style. </td>
+                    <td> &lt;tbody&gt; &lt;tr&gt; &lt;td&gt; Apple &lt;/td&gt; &lt;td&gt; $1 &lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; <span class="italic">holds the data rows.</span></td>
+                </tr>
+            <!-- Table footer -->
+                <tr>
+                    <td><span class="code">&lt;tfoot&gt;</span></td>
+                    <td>The &lt;tfoot&gt; element groups footer rows in a table. It typically contains summary or calculation data. It's placed at the bottom of the table and helps with accessibility and styling. </td>
+                    <td> &lt;tfoot&gt; &lt;tr&gt; &lt;td&gt; Total &lt;/td&gt; &lt;td&gt; $10 &lt;/td&gt; &lt;/tr&gt; &lt;/tfoot&gt; <span class="italic">adds a footer row to the table.</span></td>
+                </tr>
+            <!-- Spanning coloums-->
+                <tr>
+                    <td><span class="code">colspan="#"</span></td>
+                    <td>The colspan attribute in a &lt;td&gt; or &lt;th&gt; element allows the cell to span across multiple columns</td>
+                    <td> &lt;td colspan="3"> Merged Cell &lt;/td&gt; <span class="italic">creates a cell that stretches across three columns.</span></td>
+                </tr>
+            <!-- Spanning rows-->
+                <tr>
+                    <td><span class="code">rowspan="#"</span></td>
+                    <td>The rowspan attribute in a &lt;td&gt; or &lt;th&gt; element allows the cell to span across multiple rows. </td>
+                    <td> &lt;td rowspan="2"> Merged Cell &lt;td&gt; <span class="italic">creates a cell that spans two rows vertically.</span></td>
+                </tr>
+            </tbody>
+        </table>   
+    </section>
+    <footer class="center"><p>Created by Natalie &#9788;</p></footer>
+</body>
+</html>
